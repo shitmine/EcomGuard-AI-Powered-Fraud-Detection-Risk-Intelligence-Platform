@@ -9,7 +9,7 @@ EcomGuard automatically detects fraudulent orders in real-time, assigns AI risk 
 
 ##  Key Features
 
-**AI Risk Scoring** — Hybrid ML model (Isolation Forest + Random Forest) scores every order
+- **AI Risk Scoring** — Hybrid ML model (Isolation Forest + Random Forest) scores every order
 **Anomaly Detection** — Catches unusual patterns (velocity spikes, amount outliers, odd timing)
 **Real-time Alert Engine** — Processes live order streams (extends your existing Kafka simulation)
 **Interactive Fraud Dashboard** — Clean Streamlit UI with live metrics, high-risk queue, and charts
