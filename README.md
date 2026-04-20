@@ -3,8 +3,6 @@
 EcomGuard extends the original 30-task educational e-commerce pipeline into a **production-grade AI fraud detection system**.  
 It keeps the full original pipeline **100% untouched** while adding intelligent fraud scoring, anomaly detection, alerts, and a beautiful Streamlit dashboard.
 
-![Fraud Dashboard Preview](reports/fraud_dashboard.png)
-
 ##  What is EcomGuard?
 
 EcomGuard automatically detects fraudulent orders in real-time, assigns AI risk scores (0–100), triggers alerts, and provides an interactive investigation dashboard — exactly like modern e-commerce platforms (Amazon, Flipkart, Shopify).
@@ -18,7 +16,7 @@ EcomGuard automatically detects fraudulent orders in real-time, assigns AI risk 
 - **Automated Reports** — PDF + CSV exports of flagged transactions
 - **Zero breaking changes** — Original 30-task pipeline runs exactly as before
 
-## 📁 Project Structure (New Simplified Layout)
+##  Project Structure (New Simplified Layout)
 Pipeline 
      ↓
 01_generate_data → 02_etl → 03_analytics (RFM + cohorts) → 04_streaming
