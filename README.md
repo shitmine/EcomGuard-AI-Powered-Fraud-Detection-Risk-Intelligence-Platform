@@ -32,9 +32,10 @@ output/processed_fraud_orders.csv
 streamlit_app.py      ← Live fraud dashboard + visualizations
 
 ## Business Impact
--**Reduces fraud losses by flagging high-risk orders instantly
--**Improves customer experience with minimal false positives
--**Audit-ready reports for compliance teams
+
+- **Reduces fraud losses by flagging high-risk orders instantly
+- **Improves customer experience with minimal false positives
+- **Audit-ready reports for compliance teams
 
 
 
