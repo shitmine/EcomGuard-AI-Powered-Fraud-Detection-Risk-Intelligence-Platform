@@ -16,7 +16,7 @@ EcomGuard automatically detects fraudulent orders in real-time, assigns AI risk 
 - **Automated Reports** — PDF + CSV exports of flagged transactions
 - **Zero breaking changes** — Original 30-task pipeline runs exactly as before
 
-##  Project Structure (New Simplified Layout)
+##  Project Structure 
 Pipeline 
      ↓
 01_generate_data → 02_etl → 03_analytics (RFM + cohorts) → 04_streaming
@@ -30,4 +30,11 @@ processor.py          ← Loads warehouse → Runs AI fraud scoring & anomaly de
 output/processed_fraud_orders.csv
      ↓
 streamlit_app.py      ← Live fraud dashboard + visualizations
+
+## Business Impact
+-Reduces fraud losses by flagging high-risk orders instantly
+-Improves customer experience with minimal false positives
+-Audit-ready reports for compliance teams
+
+
 
