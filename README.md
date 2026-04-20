@@ -1,2 +1,35 @@
 # EcomGuard-AI-Powered-Fraud-Detection-Risk-Intelligence-Platform
-The Platform generates alerts, saves processed results, and provides a clean interactive Streamlit dashboard to monitor risk trends, view high-risk transactions, and investigate suspicious activity — turning raw e-commerce data into actionable fraud prevention intelligence.
+
+EcomGuard extends the original 30-task educational e-commerce pipeline into a **production-grade AI fraud detection system**.  
+It keeps the full original pipeline **100% untouched** while adding intelligent fraud scoring, anomaly detection, alerts, and a beautiful Streamlit dashboard.
+
+![Fraud Dashboard Preview](reports/fraud_dashboard.png)
+
+##  What is EcomGuard?
+
+EcomGuard automatically detects fraudulent orders in real-time, assigns AI risk scores (0–100), triggers alerts, and provides an interactive investigation dashboard — exactly like modern e-commerce platforms (Amazon, Flipkart, Shopify).
+
+##  Key Features
+
+- **AI Risk Scoring** — Hybrid ML model (Isolation Forest + Random Forest) scores every order
+- **Anomaly Detection** — Catches unusual patterns (velocity spikes, amount outliers, odd timing)
+- **Real-time Alert Engine** — Processes live order streams (extends your existing Kafka simulation)
+- **Interactive Fraud Dashboard** — Clean Streamlit UI with live metrics, high-risk queue, and charts
+- **Automated Reports** — PDF + CSV exports of flagged transactions
+- **Zero breaking changes** — Original 30-task pipeline runs exactly as before
+
+## 📁 Project Structure (New Simplified Layout)
+Pipeline 
+     ↓
+01_generate_data → 02_etl → 03_analytics (RFM + cohorts) → 04_streaming
+     ↓
+SQLite Star-Schema Warehouse (data/warehouse/ecommerce.db)
+     ↓
+main.py
+     ↓
+processor.py          ← Loads warehouse → Runs AI fraud scoring & anomaly detection
+     ↓
+output/processed_fraud_orders.csv
+     ↓
+streamlit_app.py      ← Live fraud dashboard + visualizations
+
